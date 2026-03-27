@@ -1,0 +1,8 @@
+.vscode
+questao6/venv
+questao6/__pycache__
+questao5/.env
+questao5/__pycache__
+questao5/models/__pycache__
+questao3/venv
+questao2/__pycache__

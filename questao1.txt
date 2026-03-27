@@ -1,0 +1,4 @@
+A príncipio poderia ser algo ligado a url usada na requisição, por conta que no site está funcionando normalmente, mas pela API não. 
+Diante disso, eu olharia no console ao realizar a requisição da tabela pelo meu navegador, principalmente na aba network, filtrando por "FETCH/XHR". Por meio disso, poderia verificar os endpoints usados pelo site e assim saber se ouve alguma mudança.
+
+Quanto ao bloqueio de requisições e o retorno do status code 403, em primeiro momento, por conta da quantidade de requisições realizadas no mesmo IP, com os testes, e a falta de headers, poderia ser que o site as interpretassem como um bot. Nessa situação, uma possível solução seria implementar um User-Agent, o que incorporará características de um navegador a requisição, porém caso o site tenho feito o bloqueio através do IP seria necessário mascarar a sua origem, por meio de um proxy ou trocando de rede
